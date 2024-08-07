@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 !important;
     font-family: "Fraunces", serif !important;
     font-weight: 600;
     font-style: normal;
@@ -144,4 +144,65 @@ h1 {
     font-weight: 900 !important;
     text-transform: uppercase;
     padding-top: 50px !important;
+}
+
+
+.fourth-section {
+    width: 100% !important;
+    margin: 0 !important;
+}
+.fourth-img , .fifth-img {
+    width: 100% !important;
+}
+
+
+
+
+
+
+
+
+
+
+.fifth-section {
+    width: 100% !important;
+    margin: 0 !important;
+    height:400px ;
+    text-align: center;
+    background-color:  hsl(0, 0%, 100%);
+} 
+.clients {
+    display: grid;
+    margin: 0 !important;
+}
+h3 {
+    font-weight: 900 !important;
+    font-variation-settings: "soft" 100 !important;
+    color:hsl(210, 4%, 67%) !important;
+    text-align: center !important;
+    margin-top: 100px  !important;
+    margin-bottom: 70px !important;
+    text-transform: uppercase;
+    word-spacing: 5px !important;
+}
+.client-img {
+    width: 50px;
+    border-radius: 50px !important;
+}
+.client-desc {
+    margin-top: 50px !important;
+    color:  hsl(198, 62%, 26%);
+    font-family: "Barlow", sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+.client-1 {
+    margin-left: 170px !important;
+}
+.name {
+    font-weight: 600 !important;
+}
+.client-position {
+    font-size: 14px !important;
+    color: hsl(210, 4%, 67%) !important;
 }
