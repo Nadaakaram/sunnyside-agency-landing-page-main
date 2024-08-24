@@ -13,23 +13,23 @@ body {
     align-items: center;
     margin: 30px;
 }
-.navbar {
+.navbarr {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
-.navbar li , footer ul li {
+.navbarr li , footer ul li {
     margin-right: 20px;
 }
-.navbar li a {
+.navbarr li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     padding: 6px 15px;
     border-radius: 20px;
 }
-.navbar li a:hover {
+.navbarr li a:hover {
     background-color: #6ED0FF;
 }
 .active {
@@ -39,13 +39,14 @@ body {
     margin-left: 30px;
 }
 .first-section {
+    /* background-image: url(./images/desktop/image-header.jpg) !important;
+    background-position:center !important; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
     height: 750px;
-
 }
 .first-img {
     position: absolute;
@@ -64,8 +65,9 @@ h1 {
     text-align: center !important;
     position: absolute !important;
     top: 30% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
+    left: 30% !important;
+    display: flex;
+    /* transform: translate(-50%, -50%) !important; */
     letter-spacing:2px !important ;
 }
 .arrow {
@@ -282,4 +284,265 @@ footer ul li a {
 .icons a img {
     width: 17px;
     height: 17px;
+}
+.navbar {
+    display: none !important;
+}
+.fourth-section-media {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+body {
+    width: 375px !important;
+    margin: 0 !important;
+    font-family: "Fraunces", serif !important;
+    font-weight: 600;
+    font-style: normal;
+}
+.header {
+    position: absolute;
+    width: 95%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.navbarr {
+    display: none !important;
+}
+.navbar {
+    display: flex !important;
+    color: white !important;
+    display: block !important;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px !important; */
+    position: relative;
+}
+
+.logo {
+    margin-left: 10px;
+}
+.first-section {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 635px;
+}
+.first-img {
+    display: none;
+}
+.first-img-1 {
+    display: block !important;
+    width: 375px !important;
+    height: 100%;
+    position:absolute;
+}
+
+h1 {
+    font-size: 50px !important;
+    font-weight: 900 !important;
+    font-family: "Fraunces", serif !important;
+    word-spacing: 15px !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    width: 300px !important;
+    margin-bottom: 0px !important;
+    text-align: center !important;
+    position: absolute !important;
+    display: flex;
+    margin-left: -75px !important;
+    letter-spacing:2px !important ;
+}
+
+.arrow {
+    position: relative;
+    animation: mymove 1s infinite;
+}
+@keyframes mymove {
+    from {top: 80px;}
+    to {top: 110px;}
+}
+
+
+.second-section , .third-section {
+    margin: 0 !important;
+    width: 100% !important;
+}
+.col-6 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.second-img , .third-img {
+    display: none;
+}
+.second-img-1 , .third-img-1 {
+    display: block !important;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+.desc ,.desc-2 {
+    height: 340px;
+    text-align: center;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-family: "Fraunces", serif !important;
+}
+.desc h2 {
+    margin-left: 25px;
+
+    width:280px !important;
+    color: hsl(212, 27%, 19%);
+}
+.desc-2 h2 {
+    margin-left: 25px;
+    width:280px !important;
+    color: hsl(212, 27%, 19%);
+}
+
+.desc p , .desc-2 p{
+    margin-left: 25px;
+    color: hsl(213, 9%, 39%);
+    font-family: "Barlow", sans-serif;
+    font-size: 17px;
+}
+
+
+
+
+
+
+.fourth-section {
+    position: relative !important;
+    text-align: center !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.fourth-img , .fifth-img {
+    width: 100% !important;
+    display: none !important;
+}
+.fourth-img-1 , .fifth-img-1 {
+    display: block !important;
+    width: 100% !important;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+.col-xs-12 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.text {
+    position: absolute;
+    top: 80%;
+    margin-right: -130px;
+    text-align: center !important;
+}
+.graphic {
+    color:  hsl(167, 40%, 24%) !important;
+    margin-bottom: 20px !important;
+    font-family: "Fraunces", serif !important;
+    font-weight: 900 !important;
+}
+.graphic-desc {
+    color:  hsl(167, 40%, 30%) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    font-family: "Barlow", sans-serif !important;
+    
+}
+
+.photography {
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 20px !important;
+    font-family: "Fraunces", serif !important;
+    font-weight: bolder !important;
+}
+
+
+.photography-desc {
+    color: hsl(198, 62%, 26%);
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    font-family: "Barlow", sans-serif !important;
+
+}
+
+
+.fifth-section {
+    width: 100% !important;
+    height: fit-content;
+    margin: 0 !important;
+    text-align: center;
+    background-color:  hsl(0, 0%, 100%);
+} 
+
+
+.clients {
+    margin: 0 !important;
+}
+.title {
+    font-size: larger;
+    font-weight: 900 !important;
+    font-variation-settings: "soft" 100 !important;
+    color:hsl(210, 4%, 67%) !important;
+    text-align: center !important;
+    margin-top: 70px  !important;
+    margin-bottom: 50px !important;
+    text-transform: uppercase;
+    word-spacing: 7px !important;
+}
+.client-img {
+    width: 50px;
+    border-radius: 50px !important;
+}
+.client-desc {
+    margin-top: 20px !important;
+    color:  hsl(198, 62%, 26%);
+    font-family: "Barlow", sans-serif;
+    font-size: 17px;
+    text-align: center !important;
+}
+.client-1 , .client-2 , .client-3 {
+    margin: 25px !important;
+}
+
+.client-position {
+    font-size: 13px !important;
+    color: hsl(210, 4%, 67%) !important;
+}
+
+.images-section {
+    width: 100% !important;
+    margin: 0 !important;
+}
+.images-section img {
+    width: 100% !important;
+}
+.images-section div {
+    padding: 0 !important;
+}
+.roww {
+    margin: 0 !important;
+}
 }
